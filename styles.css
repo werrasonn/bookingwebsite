@@ -1,0 +1,632 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   min-height: 100%;
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border-radius: 16px;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo size */
+    border-radius: 50%;
+}
+
+.nav-links {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(15, 12, 12);
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4a07e6; /* Change color on hover */
+}
+
+.contact-button {
+    display: inline-flex;
+    background-color: #efeef1; /* Button color */
+    color: rgb(14, 11, 11);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+.Join-Us {
+    display: inline-flex;
+    background-color: #f0eff3; /* Button color */
+    color: rgb(8, 7, 7);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+.contact-button:hover {
+    background-color: #0918e9; /* Change button color on hover */
+}
+.Join-Us:hover {
+    background-color: #0918e9; /* Change button color on hover */
+}
+/* card animation on the landing page */
+/* Basic card container */
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 0 auto; /* Centers the card on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  
+  
+  .description {
+    padding: 20px; /* Padding inside the card */
+    text-align: center; /* Center text */
+    color: #0f0d0d;
+  }
+  
+  h6 {
+    font-size: 2em;
+    color: #0f0e0e; /* Dark grey color for the heading */
+    margin: 0 0 10px; /* Margin below the heading */
+  }
+  
+  p {
+    color: #0c0b0b; /* Lighter grey for the paragraph text */
+    margin: 0; /* No margin */
+  }
+  .card2[for="c1"] {
+    background-image: url('landingimage.jpeg');
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: right center; /* Positions the image to the right center */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    position: relative;
+    width: 700px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    border-radius: 15px 50px;
+    margin-right: 20px; /* Adds space on the right */
+    display: flex;
+    flex-direction: column-reverse; /* Stack children vertically */
+    justify-content: space-between; /* Space between children */
+  }
+  
+  /* start travel button */
+  /* Button styling */
+button {
+    display: inline-flex;
+    border-radius: 70%;
+    align-items: center;
+    gap: 8px; /* Space between text and icon */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  /* Icon styling inside the button */
+  button i.fa-plane {
+    font-size: 1.2em;
+    /* Optional styling adjustments */
+  }
+  /* font size within the landing page */
+  .card-content p {
+    font-size: 1.2em; /* Set the desired font size */
+    text-align: left; /* Center the text */
+    margin: 10px 0; /* Space above and below the paragraph */
+    padding: 10px; /* Optional: Add some padding */
+    position: relative; /* Use absolute positioning */
+    bottom: 10px; /* Adjusts the text position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to truly center the text */
+    justify-content: center;
+  }
+  
+  .card-content h2 {
+    font-size: 2.9em; /* Set the desired font size */
+    text-align: left; /* Center the text */
+    margin: 10px 0; /* Space above and below the paragraph */
+    padding: 10px; /* Optional: Add some padding */
+    position: relative; /* Use absolute positioning */
+    bottom: 10px; /* Adjusts the text position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to truly center the text */
+  }
+  h3 {
+    color: #ffffff; /* Change this to your desired color for h3 */
+}
+
+p2 {
+    color: #ffffff; /* Change this to your desired color for p */
+}
+  /* social icons */
+  .social {
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  
+    margin-bottom: 30px;
+    margin-left: auto;
+   
+  
+  }
+  
+  
+  .social-icon {
+    font-size: 44px;
+  
+    margin: 0 15 px;
+  
+    font-size: 10em;
+  
+    color: #333;
+  
+    transition: color 0.3s ease;
+  
+  }
+  
+  
+  .social-icon:hover {
+  
+    color: #007bff;
+  
+  }
+ 
+
+/* explore page css */
+.explore {
+  
+    width: 100%; /* Full width */
+    height: auto; /* Set a height for the container */
+   
+    overflow: visible; /* Ensures no overflow of content */
+}
+h2 {
+
+    margin-bottom: 15px; /* Space below the main heading */
+
+}
+
+
+h4 {
+
+    margin-top: 20px; /* Space above each subheading */
+
+    margin-bottom: 5px; /* Space below each subheading */
+
+}
+
+
+p {
+
+    margin-bottom: 15px; /* Space below each paragraph */
+
+}
+.explore-image {
+    margin-top: 20px;
+    margin-left: 20px;
+    top: 20px;
+    width: 700px; /* Image covers half the container */
+    max-width: 50%;
+    height: 500px; /* Full height of the container */
+    background-image: url('explore.jpeg'); /* Add your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: right center; /* Positions the image to the right center */
+    border-radius: 15px 50px;
+    float: left;
+}
+.explore-content {
+    margin-top: 0px;
+    padding: 4px;
+    float: right;
+    height: 500px;
+    width: 40%; /* Content takes up half the container */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    display: flex; /* Use flexbox for inner content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+   
+    
+}
+
+
+
+
+/* Testimonial Container */
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px; /* Space around the testimonial */
+    margin: 0 auto;
+    width: 100%;  /* Full width of the container */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Testimonial Box */
+.testimonial {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;  /* Full width of the container */
+    max-width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+    
+}
+
+.testimonial-content p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.testimonial-content strong {
+    font-size: 1.1em;
+    color: #007bff;
+}
+
+/* Testimonial Image */
+.testimonial-image {
+    flex-shrink: 0;
+}
+
+.testimonial-image img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    border-radius: 15px 50px;
+}
+
+/* question tab css code */
+.questionstab{
+    background-color: #0509e9;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px; /* Space around the testimonial */
+    margin: 0 auto;
+    height: auto;
+    width: 100%;  /* Full width of the container */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.questionscontent {
+    background-color: #0509e9;
+    flex-direction: column; /* Stacks items vertically in columns */
+    display: flex;
+    align-items: left;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;  /* Full width of the container */
+    max-width: 700px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box;
+    margin-right: auto; /* Pushes the container to the left */
+}
+h4 {
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #ddd;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #ddd;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #9c9494;
+}
+p10 {
+    color: #ddd;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* unnumbered list */
+.no-bullets {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+.no-bullets li {
+    color: white; /* Set text color to white */
+    font-size: 18px; /* Specify the font size (change as needed) */
+    margin: 10px 0; /* Optional: space between list items */
+    display: flex; /* Align icons and text */
+    align-items: center; /* Center items vertically */
+}
+.no-bullets i {
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+/* faqs common questions */
+.FAQS {
+    display: flex; /* Use flexbox for layout */
+    max-width: 100%; /* Set a max width for the FAQ section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.faqs-image {
+ 
+    flex: 1; /* Allow the image container to grow */
+    text-align: left; /* Align the image to the left */
+    margin-right: 20px; /* Space between the image and the FAQ summary */
+}
+
+.faqs-image img {
+    width: 700px;
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.faqssummary {
+    flex: 2; /* Allow the summary to take more space */
+    display: flex; /* Enable flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    max-width: 50%; /* Set to take full width available */
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    font-size: 1.8rem; /* Heading size */
+    color: #007bff; /* Blue color for main heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below main heading */
+}
+h4 {
+    font-size: 1rem; /* Heading size */
+    color: #007bff; /* Blue color for main heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below main heading */
+}
+
+details {
+    margin-bottom: 15px; /* Space between each question */
+    border: 1px solid #ddd; /* Border around each question */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background for dropdowns */
+}
+
+summary {
+    padding: 10px; /* Padding around summary */
+    font-weight: bold; /* Bold font for summary */
+    color: #0a0b0c; /* Blue color for text */
+    cursor: pointer; /* Pointer cursor for interaction */
+    outline: none; /* Remove outline */
+}
+
+summary:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.answer {
+    padding: 10px; /* Padding for answer text */
+    background-color: #f9f9f9; /* Light gray background for answers */
+    border-top: 1px solid #ddd; /* Divider line between question and answer */
+    display: none; /* Hidden by default; will show on toggle */
+}
+
+/* Optional: To display answers when details are opened */
+details[open] .answer {
+    display: block; /* Show answer when details is open */
+}
+/* code for the insight part */
+.travelinsights {
+    max-width: 100%; /* Set a maximum width for the travel insights section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Add padding around the section */
+    background-color: #f0f8ff; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the section */
+}
+
+.insight-content {
+    margin-bottom: 20px; /* Space below the heading content */
+}
+
+.insight-content h2 {
+    font-size: 2rem; /* Size for the main heading */
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.insight-content p {
+    font-size: 1rem; /* Font size for the paragraph */
+    color: #333; /* Dark gray color for the paragraph text */
+}
+
+/* Flexbox for card tips */
+.insight-tips {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space cards evenly */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+h7 {
+    font-size: 1.25rem; /* Change this to your desired font size */
+    font-weight: bold; /* Font weight, e.g., normal, bold, 700 */
+    color: #333; /* Change to your desired text color */
+    margin: 10px 0; /* Adjust top and bottom margin */
+    line-height: 1.5; /* Line height for better readability */
+    text-align: left; /* Align text, can be left, right, center, or justify */
+}
+
+/* Card styling */
+.card {
+    width: auto;
+    background-color: #ffffff; /* White background for each card */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1; /* Allow cards to grow equally */
+    margin: 10px; /* Margin around each card */
+    text-align: left; /* Align text to the left */
+    max-width: 300px; /* Set a maximum width for each card */
+    transition: transform 0.2s; /* Transition effect for hover */
+    flex-direction: column; /* Stack content in columns */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card h3 {
+    font-size: 1.5rem; /* Size for the card title */
+    color: #007bff; /* Blue color for the card title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.card p {
+    font-size: 0.9rem; /* Font size for card paragraph */
+    color: #555; /* Darker gray for paragraph text */
+}
+.tip-author {
+    margin-top: 10px; /* Space above the author info */
+    font-size: 0.85rem; /* Slightly smaller font size */
+    color: #666; /* Gray color for the author info */
+}
+
+.author-name {
+    font-weight: bold; /* Bold for the name */
+}
+
+.author-occupation {
+    font-style: italic; /* Italic for the occupation */
+}
+.profile-image {
+    width: 40px; /* Set width for the image */
+    height: 40px; /* Set height for the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-right: 10px; /* Space between the image and the text */
+    vertical-align: middle; /* Align image with text */
+}
+/* bottom nav bar */
+.endsection {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for the entire section */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.navbarend {
+    width: 100%; /* Full width */
+    display: flex; /* Use flexbox for the navbar */
+    justify-content: center; /* Center nav links */
+}
+
+.navlinks {
+    list-style: none; /* Remove bullets from list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navlinks li {
+    margin: 0 15px; /* Space between links */
+}
+
+.navlinks a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navlinks a:hover {
+    color: #0a0ef1; /* Change color on hover */
+}
+
+.logosending {
+    margin-top: 15px; /* Space above the logos */
+    text-align: center; /* Center logos and text */
+}
+
+.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center items */
+}
+
+.no-bullets li {
+    margin: 0 10px; /* Space between social icons */
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center icons with text */
+    color: white; /* Icon color */
+}
+
+.no-bullets li i {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 20px; /* Adjust icon size */
+}
+
+footer p {
+    margin-top: 10px; /* Space above copyright text */
+    font-size: 14px; /* Font size for copyright text */
+}
