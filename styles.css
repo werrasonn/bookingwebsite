@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Candara', sans-serif;
+    font-weight: 400; /* Light font weight */
    min-height: 100%;
 
 }
