@@ -477,6 +477,8 @@ details[open] .answer {
 /* Card styling */
 .card {
     width: auto;
+    height: auto;
+    min-height: 200px;
     background-color: #ffffff; /* White background for each card */
     border: 1px solid #ddd; /* Light gray border */
     border-radius: 10px; /* Rounded corners */
@@ -1038,5 +1040,473 @@ h6 {
 
     .reachout h2 {
         font-size: 1.3em;
+    }
+}
+
+
+/* about page css code */
+/* landing page css */
+.aboutlanding {
+    background: linear-gradient(to bottom, #ffffff, #87CEFA); /* White to light blue gradient */
+    color: #333; /* Dark color for contrast */
+    text-align: center; /* Center align all text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 50px; /* Space around content */
+    height: 100vh; /* Full viewport height */
+}
+
+.aboutlanding h1 {
+    font-size: 4em; /* Large font size for h1 */
+    color: #1965df; /* Darker blue for h1 */
+    margin: 20px 0;
+}
+
+.aboutlanding p {
+    font-size: 1.4em; /* Slightly larger text for the paragraph */
+    color: #333; /* Contrast color */
+    max-width: 600px; /* Limit text width for readability */
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.aboutlanding a {
+    color: #1965df; /* Link color for 'Learn More' */
+    border: auto #007bff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.aboutlanding a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+.aboutlanding button {
+    margin: 0 10px; /* Space between the buttons */
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 15px;
+    border: 2px #007bff;
+    border-radius: 55px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Start Journey button: Blue background, white text */
+.aboutlanding button:first-of-type {
+    background-color: #1965df; /* Blue button */
+    color: #ffffff;
+}
+
+.aboutlanding button:first-of-type:hover {
+    background-color: #104a9f; /* Darker blue on hover */
+}
+
+/* Learn More button: White background, blue text */
+.aboutlanding button:last-of-type {
+    background-color: #ffffff; /* White button */
+    color: #1965df;
+    border: 2px solid #1965df; /* Blue border */
+}
+
+.aboutlanding button:last-of-type:hover {
+    background-color: #d9e7fa; /* Light blue on hover */
+}
+
+/* meet the experts section */
+.meettheexperts {
+    display: flex; /* Use flexbox to arrange children horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between text and images */
+    padding: 40px; /* Padding around the section */
+    background-color: #f7f7f7; /* Light background color */
+}
+
+.meetinfo {
+    flex: 1; /* Allow this section to take up available space */
+    margin-right: 20px; /* Space between text and images */
+}
+
+.meetinfo h1 {
+    font-size: 2.5em; /* Font size for heading */
+    color: #1965df; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.meetinfo p {
+    font-size: 1.2em; /* Font size for paragraph */
+    color: #333; /* Paragraph color */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.meetinfo button {
+    background-color: #1965df; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.meetinfo button:hover {
+    background-color: #145cbf; /* Darker blue on hover */
+}
+
+.expertimg {
+    width: 100%;
+    display: flex; /* Use flexbox to arrange images in a row */
+    flex-direction: row; /* Arrange items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+    justify-content: center; /* Center images in the container */
+    margin-top: 20px; /* Space above the image section */
+}
+
+.imgexpert {
+    margin: 50px; /* Space around each expert */
+    text-align: center; /* Center text under images */
+    width: 500px; /* Fixed width for each expert container */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.imgexpert img {
+    width: 100%; /* Make image take full width of the container */
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crop image to fill the container */
+    border-radius: 10px; /* Optional rounded corners */
+    margin-bottom: 5px; /* Space below images */
+}
+
+.imgexpert p1 {
+    font-weight: bold; /* Bold font for names */
+    font-size: 1.7em; /* Font size for names */
+    color: #1965df; /* Color for names */
+}
+
+.imgexpert p2 {
+    font-size: 1.4em; /* Font size for titles */
+    color: #666; /* Color for titles */
+}
+/* social info code */
+
+/* Container for joincommunity */
+.joincommunity {
+    margin-top: 80px;
+    display: flex;
+    width: 100%; /* Full width of container */
+    height: auto; /* Full height of viewport */
+    background-color: #f7f7f7; /* Fallback color if image doesn't load */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for joininfo (left side) */
+.joininfo {
+  display: flex;
+    padding: 20px;
+    width: 100%;
+    height: 700px;
+    color: white;
+    background-image: url('earth.jpg'); /* Background image */
+    background-size: cover; /* Cover entire area */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+}
+.joininfo button{
+    max-width: 200px;
+    background-color: #1965df; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 30px; /* Rounded corners */
+    text-align: center;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition */
+    
+}
+.joininfo h1 {
+   color: #fff;
+    font-size: 2.5em; /* Large font for the heading */
+    margin: 10px 0;
+}
+
+.joininfo p {
+    color: #fff;
+    font-size: 1.2em; /* Paragraph font size */
+}
+
+/* Styling for socialinfo (right side) */
+.socialinfo {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap within this container */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 150px; /* Fixed width for each card */
+}
+
+.card img {
+    border-radius: 50%; /* Circular image */
+    width: 80px;
+    height: 80px;
+}
+
+.card h3 {
+    margin: 5px 0; /* Margin for name */
+    font-size: 1.2em;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* about testimonial code */
+/* General layout */
+.testimonial-section {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #1965df, #ffffff);
+    border-radius: 10px;
+}
+
+/* Card container */
+.testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Individual card styling */
+.testimonial-card {
+    width: 500px;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: scale(0.9); /* Shrinks non-active cards slightly */
+}
+
+/* Active card styling */
+.testimonial-card.active {
+    opacity: 1;
+    transform: scale(1); /* Enlarges the active card */
+}
+
+/* Button styling */
+.testimonial-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1965df;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.testimonial-buttons button:hover {
+    background-color: #145cbf;
+}
+
+/* Card content styling */
+.testimonial-card p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.testimonial-card h3 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #1965df;
+}
+
+/* industry experts code */
+.industryexperts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f8ff; /* Light blue background for the section */
+    gap: 20px; /* Space between the image and the text */
+}
+
+/* Image section styling */
+.theexperts {
+    flex: 1; /* Takes up 50% of space */
+    display: flex;
+    justify-content: center; /* Centers image within the container */
+}
+
+.theexperts img {
+    width: 100%;
+    width: 500px; /* Optional: Limits image width */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+/* Information section styling */
+.specialistsinfo {
+    flex: 1; /* Takes up 50% of space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between worker info sections */
+    
+}
+
+/* Worker info cards styling */
+.workersinfo h1 {
+    font-size: 2em;
+    color: #1965df; /* Primary color for headings */
+    margin-bottom: 5px;
+}
+
+.workersinfo p {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+ 
+}
+
+.workersinfo p1 {
+    font-size: 1.4em;
+    color: #666;
+    border-bottom: 2px solid #837878; /* Line color and thickness */
+}
+
+.href a {
+    font-size: 1.2em;
+    color: #1965df;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .industryexperts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .theexperts,
+    .specialistsinfo {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+  /* code for the effortless part of the code */
+  /* Container Styling */
+.bookeffortlessly {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+    background-color: #f7f7f7;
+}
+
+/* Image Section Styling */
+.effortlessimg {
+    flex: 1;
+}
+
+.effortlessimg img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Content Section Styling */
+.effort.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header and Text Styles with Spacing */
+.effort.content h2 {
+    font-size: 1.8em;
+    color: #1965df; /* Blue color for h2 */
+    margin-bottom: 10px; /* Spacing below h2 */
+}
+
+.effort.content h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #000; /* Black color for h1 */
+    margin-bottom: 15px; /* Spacing below h1 */
+}
+
+.effort.content h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #000; /* Black color for h3 */
+    margin-top: 20px; /* Space above h3 */
+    margin-bottom: 10px; /* Space below h3 */
+}
+
+.effort.content p {
+    font-size: 1.4em;
+    color: #333; /* Darker shade for p */
+    margin-bottom: 15px; /* Space below p */
+}
+
+.effort.content p1 {
+    font-size: 1.4em;
+    color: #666; /* Slightly gray shade for p1 */
+    display: block; /* Block display for spacing purposes */
+    margin-bottom: 15px; /* Space below p1 */
+}
+
+/* Additional Styling for Section Headers */
+.effort.content h4 {
+    font-size: 1.4em;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .bookeffortlessly {
+        flex-direction: column;
+    }
+
+    .effortlessimg, .effort.content {
+        width: 100%;
     }
 }
