@@ -44,6 +44,18 @@ body {
 .nav-links a:hover {
     color: #4a07e6; /* Change color on hover */
 }
+.bookdata {
+    display: inline-flex;
+   
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
 
 .contact-button {
     display: inline-flex;
@@ -96,16 +108,9 @@ body {
     color: #0f0d0d;
   }
   
-  h6 {
-    font-size: 2em;
-    color: #0f0e0e; /* Dark grey color for the heading */
-    margin: 0 0 10px; /* Margin below the heading */
-  }
+
   
-  p {
-    color: #0c0b0b; /* Lighter grey for the paragraph text */
-    margin: 0; /* No margin */
-  }
+ 
   .card2[for="c1"] {
     background-image: url('landingimage.jpeg');
     background-size: cover; /* Ensures the image covers the entire card */
@@ -124,6 +129,8 @@ body {
   /* start travel button */
   /* Button styling */
 button {
+  
+    max-width: 300px;
     display: inline-flex;
     border-radius: 70%;
     align-items: center;
@@ -165,9 +172,7 @@ button {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Offset to truly center the text */
   }
-  h3 {
-    color: #ffffff; /* Change this to your desired color for h3 */
-}
+
 
 p2 {
     color: #ffffff; /* Change this to your desired color for p */
@@ -215,23 +220,13 @@ p2 {
    
     overflow: visible; /* Ensures no overflow of content */
 }
-h2 {
 
-    margin-bottom: 15px; /* Space below the main heading */
-
-}
-
-
-h4 {
-
-    margin-top: 20px; /* Space above each subheading */
-
-    margin-bottom: 5px; /* Space below each subheading */
-
-}
 
 
 p {
+    color: #0c0b0b; /* Lighter grey for the paragraph text */
+    margin: 0; /* No margin */
+    font-size: 1.4em;
 
     margin-bottom: 15px; /* Space below each paragraph */
 
@@ -348,22 +343,7 @@ p {
     box-sizing: border-box;
     margin-right: auto; /* Pushes the container to the left */
 }
-h4 {
-    font-size: 1em;
-    margin-bottom: 1em;
-    color: #ddd;
-}
-h1 {
-    font-size: 3em;
-    margin-bottom: 1em;
-    color: #ddd;
-}
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #9c9494;
-}
 p10 {
     color: #ddd;
     font-size: 1.2em;
@@ -429,18 +409,6 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-h2 {
-    font-size: 1.8rem; /* Heading size */
-    color: #007bff; /* Blue color for main heading */
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Space below main heading */
-}
-h4 {
-    font-size: 1rem; /* Heading size */
-    color: #007bff; /* Blue color for main heading */
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Space below main heading */
-}
 
 details {
     margin-bottom: 15px; /* Space between each question */
@@ -504,14 +472,7 @@ details[open] .answer {
     justify-content: space-between; /* Space cards evenly */
     flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
-h7 {
-    font-size: 1.25rem; /* Change this to your desired font size */
-    font-weight: bold; /* Font weight, e.g., normal, bold, 700 */
-    color: #333; /* Change to your desired text color */
-    margin: 10px 0; /* Adjust top and bottom margin */
-    line-height: 1.5; /* Line height for better readability */
-    text-align: left; /* Align text, can be left, right, center, or justify */
-}
+
 
 /* Card styling */
 .card {
@@ -630,4 +591,452 @@ h7 {
 footer p {
     margin-top: 10px; /* Space above copyright text */
     font-size: 14px; /* Font size for copyright text */
+}
+
+
+
+/* bookings page */
+.booklanding {
+    background-image: url('booklanding.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+    position: relative; /* Position to allow for absolute elements */
+}
+.bookdata {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items in a column */
+    gap: 10px; /* Add space between items */
+}
+
+.discover-more {
+    list-style: none; /* Remove bullet point */
+    color: #070c14; /* Set color for the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.landingbut {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Stack items vertically */
+    gap: 20px; /* Add space between items (buttons) */
+}
+
+/* offers page code */
+
+.offersbook {
+
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center;
+    height: auto; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: left; /* Center elements horizontally */
+    color: rgb(12, 11, 11); /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+    position: relative; /* Position to allow for absolute elements */
+    
+}
+.offerinfo {
+ 
+    flex-direction: column; /* Stack items in a column */
+    gap: 0px; /* Add space between items */
+    align-items: left;
+}
+
+
+.contentoffer {
+    
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Stack items in a column */
+    gap: 200px; /* Add space between items */
+}
+.ocontent{
+    border: 1px solid #065fe6; /* Border color matches icon color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    margin: 10px 0; /* Space between each box */
+}
+/* code for the carousel */
+.inspiration {
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center;
+    height: auto; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: left; /* Center elements horizontally */
+    color: rgb(12, 11, 11); /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+    position: relative; /* Position to allow for absolute elements */
+    width: 100%; /* Full width */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.inspirationcontent {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items in a column */
+    gap: 0px; /* Add space between items */
+    align-items: left;
+}
+
+
+.carousel {
+
+    width: 100%; /* Full width of the parent */
+
+    overflow-x: auto; /* Enable horizontal scrolling */
+
+    white-space: nowrap; /* Prevent line breaks */
+
+ 
+
+    padding: 10px 0; /* Padding for aesthetics */
+
+}
+
+
+.scroll-item {
+
+    display: inline-block; /* Keep images in a single line */
+
+    text-align: center; /* Center-align text */
+
+    margin-right: 20px; /* Space between images */
+
+}
+
+
+.scroll-item img {
+    border-radius: 10px;
+
+    height: 300px; /* Set a fixed height for images */
+
+    display: block; /* Makes the image a block element */
+
+    margin-bottom: 5px; /* Space between image and text */
+
+}
+
+
+/* Optional: Hide scrollbar for a cleaner look */
+.carousel::-webkit-scrollbar {
+
+    display: none; /* Hide scrollbar for WebKit browsers */
+
+}
+
+
+ /* heading styles all pages */
+ h1 {
+    font-size: 3em;
+    color: #0f0e0e; /* Dark grey color for the heading */
+    margin: 0 0 10px; /* Margin below the heading */
+  }
+  h2 {
+    color: #fff;
+  
+
+}
+h3 {
+    font-size: 2.1em;
+    color: #0c0606; /* Change this to your desired color for h3 */
+}
+h4 {
+    font-size: 1.5rem; /* Heading size */
+    color: #007bff; /* Blue color for main heading */
+    margin-bottom: 0px; /* Space below main heading */
+}
+h5 {
+    font-size: 1.25rem; /* Change this to your desired font size */
+    font-weight: bold; /* Font weight, e.g., normal, bold, 700 */
+    color: #333; /* Change to your desired text color */
+    margin: 10px 0; /* Adjust top and bottom margin */
+    line-height: 1; /* Line height for better readability */
+    text-align: left; /* Align text, can be left, right, center, or justify */
+}
+h6 {
+    font-size: 2em;
+    color: #0e0a0a;
+    margin-bottom: 15px; /* Space below the main heading */
+
+}
+.h7 {
+    color: #050303;
+    font-size: 5em; /* Font size */
+    text-align: left; /* Optional: centers text if used in a block element */
+    line-height: 1.2; /* Optional: adjust line height for better readability */
+}
+
+/* pricing code for the booking section */
+/* Container for the pricing section */
+.pricingpage {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333;
+}
+
+/* Header content styling */
+.pricingcontent h4 {
+    font-size: 1.5em;
+    color: #74C0FC;
+    margin-bottom: 10px;
+}
+
+.pricingcontent h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pricingcontent p {
+    font-size: 1.4em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px auto; /* Center text with some bottom spacing */
+}
+
+/* Pricing cards layout */
+.pricinginfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+/* Card header styling */
+.card h5 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* Paragraph 2 styling - bold */
+.card p2 {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Paragraph 3 styling - darker color and spaced */
+.card p3 {
+    font-size: 1em;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Additional spacing and alignment */
+.card i {
+    margin-right: 8px; /* Space between icon and text */
+}
+/* booking section code */
+/* Main container for the booking section */
+.booktrip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Trip information on the left */
+.tripinfo {
+    max-width: 50%;
+}
+
+.tripinfo h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tripinfo p {
+    font-size: 1.4em;
+    color: #000000;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Icons and text in p1 elements */
+.tripinfo p1 {
+    font-size: 1.2em;
+    color: #4e4646;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tripinfo p1 i {
+    margin-right: 8px; /* Spacing between icon and text */
+}
+
+/* Button styling */
+.tripinfo button {
+    background-color: #74C0FC;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.tripinfo button:hover {
+    background-color: #4a9cd3;
+}
+
+/* Book image on the right */
+.bookimage {
+    max-width: 45%;
+}
+
+.bookimage img {
+    width: 100%; /* Make image responsive */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .booktrip {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tripinfo, .bookimage {
+        max-width: 100%;
+    }
+
+    .tripinfo button {
+        margin-top: 20px;
+    }
+}
+.li{
+    font-size: 1.4em;
+}
+
+/* reachout section code */
+/* Main container for reachout section */
+.reachout {
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px auto; /* Centers within the reachout container */
+}
+
+/* Styling for reachout information */
+.reachoutinfo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.reachoutinfo h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.reachoutinfo p {
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Individual contact options */
+.reachout div[class^="classreach"] {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #74C0FC;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.reachout h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.reachout i {
+    margin-right: 10px;
+}
+
+/* Custom link styling */
+.reachout a {
+    color: #457ad1;
+    font-size: 1.4em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.reachout a:hover {
+    color: #074a9c;
+    text-decoration: underline;
+}
+
+/* Space between items */
+.reachout div[class^="classreach"] {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reachout a i {
+    margin-left: 5px;
+}
+.reachoutinfo p1 {
+    font-size: 1em;
+    color: #796464;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .reachout {
+        padding: 20px;
+    }
+
+    .reachoutinfo h1 {
+        font-size: 1.8em;
+    }
+
+    .reachout h2 {
+        font-size: 1.3em;
+    }
 }
