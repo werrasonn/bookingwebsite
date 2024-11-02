@@ -1073,7 +1073,7 @@ h6 {
 }
 
 .aboutlanding a {
-    color: #1965df; /* Link color for 'Learn More' */
+    color: #e4e6e9; /* Link color for 'Learn More' */
     border: auto #007bff;
     text-decoration: none;
     font-size: 1em;
@@ -1089,11 +1089,12 @@ h6 {
     margin: 0 10px; /* Space between the buttons */
     font-size: 1.2em;
     padding: 15px 30px;
+    color: white;
     margin: 15px;
     border: 2px #007bff;
     border-radius: 55px;
     cursor: pointer;
-    transition: background 0.3s;
+   
 }
 
 /* Start Journey button: Blue background, white text */
@@ -1509,4 +1510,22 @@ a:hover {
     .effortlessimg, .effort.content {
         width: 100%;
     }
+}
+.button {
+    background-color: #007BFF; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    text-align: center; /* Center text inside the button */
+    text-decoration: none; /* Remove underline for anchor tags */
+    display: inline-block; /* Allows setting width and height */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }

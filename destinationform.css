@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Candara', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white, rgb(9, 46, 209)); /* Gradient from white to light blue */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.booking-page {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% transparency */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the content */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Limit the maximum width */
+}
+
+
+
+/* Progress Bar Styles */
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space below the progress bar */
+}
+
+.step {
+    width: 20%; /* Each step takes equal width */
+    text-align: center; /* Center the step numbers */
+    padding: 10px; /* Padding for better touch area */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #e0e0e0; /* Default background for steps */
+    color: #666; /* Default text color */
+}
+
+.step.completed {
+    background-color: #4caf50; /* Green background for completed steps */
+    color: white; /* White text for completed steps */
+}
+
+/* Form Section Styles */
+.form-section {
+    margin-bottom: 20px; /* Space between form sections */
+}
+
+h2 {
+    text-align: center; /* Center the section headings */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%; /* Full width for inputs and selects */
+    padding: 10px; /* Padding inside inputs and selects */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+}
+
+button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.next-btn {
+    background-color: #28a745; /* Green color for next button */
+}
+
+.next-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.back-button {
+    background-color: #dc3545; /* Red color for back button */
+}
+
+.back-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.start-journey-btn {
+    display: inline-block; /* Make it behave like a button */
+    text-align: center; /* Center the text */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.start-journey-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
